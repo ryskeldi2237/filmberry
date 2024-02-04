@@ -10,7 +10,7 @@ function Section({ data, style }) {
       {filteredData.map((item, i) => (
         <Link to={`/page/${item.id}`} key={i}>
           <div className="section__item">
-            <img src={constructImageUrl(item.backdrop_path)} alt="item" />
+            <img src={constructImageUrl(item.backdrop_path)} alt="item" className="section__img"/>
             <div className="section__wrap">
               <div className="section__title">{item.title}</div>
               <div className="section__rating">
@@ -24,9 +24,9 @@ function Section({ data, style }) {
                 <span>{item.release_date.substring(0, 4)}</span>
               </div>
               <div>
-                {item.overview.length < 300
+                {item.overview.length < 200
                   ? item.overview
-                  : item.overview.substring(0, 300) + "..."}
+                  : item.overview.substring(0, 200) + "..."}
               </div>
             </div>
           </div>
