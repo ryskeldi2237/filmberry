@@ -1,0 +1,89 @@
+.login {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../../assets/img/login.jpg') center center no-repeat;
+  background-size: cover;
+  opacity: 0.4; 
+  z-index: -1; 
+}
+.login__logo{
+  position: absolute;
+  top: 50px;
+  left: 80px;
+  transform: scale(1.2);
+  cursor: pointer;
+  z-index: 1;
+}
+.login-page {
+  width: 360px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 5%;
+  opacity: 1;
+}
+.login__input {
+  background: #333;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  font-size: 16px;
+  padding: 5px 15px;
+  width: 92%;
+  margin-top: 20px;
+}
+.login__input:focus {
+  border: none;
+}
+.login__button {
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 24px 0 12px;
+  border: none;
+  width: 100%;
+  height: 50px;
+  background: #E50914;
+  color: #fff;
+  cursor: pointer;
+}
+.login__message {
+  margin: 25px 0 0;
+  color: #b3b3b3;
+}
+.login__message span {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+h2{
+  margin: 0;
+}
+.login__error{
+  width: calc(100% - 40px);
+  background: #e87c03;
+  border-radius: 4px;
+  margin: 28px 0 16px;
+  padding: 10px 20px;
+}
+.login__error span{
+  text-decoration: underline;
+}
+span{
+  cursor: pointer;
+}

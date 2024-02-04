@@ -1,0 +1,43 @@
+.content
+    &__pagination
+        margin-top: 20px
+        button
+            color: #fff !important
+    &__genre
+        display: flex
+        flex-wrap: wrap
+        padding: 20px 0
+        margin: 0
+        &-item
+            padding: 10px 30px
+            background: #17161B
+            border-radius: 30px
+            list-style-type: none
+            margin-left: 20px
+            margin-top: 10px
+        .active
+            background: #E50914
+    &__wrapper
+        margin-top: 30px
+        position: relative
+    &__search
+        position: absolute
+        top: 0px
+        right: 100px
+        svg
+            cursor: pointer
+            width: 20px
+            height: 20px
+        input
+            border: 1px solid rgba(0, 0, 0, 0.1)
+            padding: 10px 5px
+            padding-left: 10px
+            width: 200px
+            border-radius: 10px
+            font-size: 16px
+            margin-right: 40px
+
+@media screen and (max-width: 1200px)
+    .content
+        &__genre
+            // flex-direction: column

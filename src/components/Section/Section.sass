@@ -1,0 +1,42 @@
+.section
+    padding-top: 42px
+    display: flex
+    flex-wrap: wrap
+    position: relative
+    &__item
+        cursor: pointer
+        margin-left: 30px
+        margin-bottom: 30px
+        transition: transform 0.5s ease
+        img
+            border-radius: 20px
+            z-index: 0
+        &:hover
+            transform: scale(1.05)
+            .section__wrap
+                display: block
+    &__wrap
+        display: none
+        position: absolute
+        top: 0
+        left: 0
+        width: calc(100% - 40px)
+        height: 85%
+        background-color: rgba(0, 0, 0, 0.9)
+        border-radius: 20px
+        z-index: 1000
+        padding: 20px
+    &__title
+        font-size: 18px
+        margin-top: 16px
+        font-weight: 500
+    &__rating
+        text-align: right
+    &__date
+        text-align: right
+        margin-top:10px
+        margin-bottom: 10px 
+
+@media screen and (max-width: 1200px)
+    .section
+        justify-content: center

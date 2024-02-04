@@ -1,0 +1,48 @@
+.header
+    &__wrapper
+        display: flex
+        padding-top: 25px
+        align-items: center
+        position: relative
+    &__logo
+        cursor: pointer
+    &__items
+        display: flex
+        justify-content: space-between
+        margin-left: 270px
+        width: 350px
+        font-size: 16px
+        padding: 0
+        .active
+            &::before
+                height: 16px
+                width: 12px
+                content :'⏵'
+                margin-right: 5px
+                display: inline-block
+                color: #E50914
+        li
+            list-style-type: none
+            margin: 0
+            padding: 0
+    &__nav
+        cursor: pointer
+        display: flex
+        width: 35%
+        font-size: 16px
+        align-items: center
+        justify-content: flex-end
+        svg
+            margin-left: 20px
+    &__wrap
+        display: flex
+        align-items: center
+
+@media screen and (max-width:1200px ) 
+    .header
+        &__logo
+            width: 120px
+        &__items
+            font-size: 14px
+            width: 200px
+            margin-left: 100px
